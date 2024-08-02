@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Roll Number</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^3.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="container mx-auto p-6 bg-white rounded-lg shadow-lg max-w-lg w-full">
+        <h1 class="text-2xl font-bold mb-4 text-center text-teal-600">JSON Input</h1>
+        <textarea id="jsonInput" placeholder='Enter JSON here, e.g., {"data": ["A", "B", "1"]}' class="w-full h-32 p-3 border rounded-lg mb-4 border-gray-300"></textarea>
+        <button id="submitButton" class="w-full bg-teal-600 text-white py-2 rounded-lg hover:bg-teal-700 transition duration-300">Submit</button>
+        <div id="error" class="text-red-500 mt-2 mb-4"></div>
+        <select id="filterSelect" multiple class="w-full p-2 border rounded-lg border-gray-300 mb-4 bg-gray-50">
+            <option value="numbers">Numbers</option>
+            <option value="alphabets">Alphabets</option>
+            <option value="highest_alphabet">Highest Alphabet</option>
+        </select>
+        <div id="result" class="text-gray-800"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
